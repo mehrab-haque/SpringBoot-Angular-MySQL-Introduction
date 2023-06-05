@@ -1,0 +1,17 @@
+table{
+    margin-top: 10px;
+    width: 100%;
+   }
+.mat-header-cell {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  
+.mat-cell {
+    text-align: center;
+    justify-content:center;
+  }
+td.mat-cell{
+    border-bottom-style: none;
+}
