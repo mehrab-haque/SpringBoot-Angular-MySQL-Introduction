@@ -1,0 +1,51 @@
+<form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" class="form-control" id="title" formControlName="title">
+      <div *ngIf="bookForm.controls['title'].invalid && (bookForm.controls['title'].dirty || bookForm.controls['title'].touched)" class="alert alert-danger">
+        Title is required
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="price">Price</label>
+      <input type="number" class="form-control" id="price" formControlName="price">
+      <div *ngIf="bookForm.controls['price'].invalid && (bookForm.controls['price'].dirty || bookForm.controls['price'].touched)" class="alert alert-danger">
+        Price is required
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="yearOfPublish">Year of Publish</label>
+      <input type="number" class="form-control" id="yearOfPublish" formControlName="yearOfPublish">
+      <div *ngIf="bookForm.controls['yearOfPublish'].invalid && (bookForm.controls['yearOfPublish'].dirty || bookForm.controls['yearOfPublish'].touched)" class="alert alert-danger">
+        Year of Publish is required
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="author">Author</label>
+      <input type="text" class="form-control" id="author" formControlName="author">
+      <div *ngIf="bookForm.controls['author'].invalid && (bookForm.controls['author'].dirty || bookForm.controls['author'].touched)" class="alert alert-danger">
+        Author is required
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="genre">Genre</label>
+      <input type="text" class="form-control" id="genre" formControlName="genre">
+      <div *ngIf="bookForm.controls['genre'].invalid && (bookForm.controls['genre'].dirty || bookForm.controls['genre'].touched)" class="alert alert-danger">
+        Genre is required
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="publisher">Publisher</label>
+      <input type="text" class="form-control" id="publisher" formControlName="publisher">
+      <div *ngIf="bookForm.controls['publisher'].invalid && (bookForm.controls['publisher'].dirty || bookForm.controls['publisher'].touched)" class="alert alert-danger">
+        Publisher is required
+      </div>
+    </div>
+  
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
