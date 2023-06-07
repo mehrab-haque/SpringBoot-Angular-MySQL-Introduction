@@ -1,13 +1,11 @@
 version: 0.2
 phases:
   install:
-    runtime-versions: emphasized text
-    java: corretto11
-    commands:
-      - echo install
+    runtime-versions:
+      java: corretto17
   pre_build:
     commands:
-      - echo pre_build
+      - echo In the pre_build phase...
   build:
     commands:
       - cd backend
