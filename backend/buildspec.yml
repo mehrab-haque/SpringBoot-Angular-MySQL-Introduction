@@ -13,10 +13,11 @@ phases:
       - echo build
   post_build:
     commands:
+      - cd ..
       - echo post_build
       - ls
-      - mv target/*.jar app.jar
+      - mv backend/target/*.jar app.jar
       - ls
 artifacts:
   files:
-    - backend/app.jar
+    - app.jar
