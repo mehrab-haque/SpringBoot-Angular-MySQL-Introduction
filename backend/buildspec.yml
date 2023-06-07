@@ -1,22 +1,22 @@
 version: 0.2
-  phases:
-    install:
-      runtime-versions: emphasized text
-      java: corretto11
-      commands:
-        - echo install
-    pre_build:
-      commands:
-        - echo pre_build
-    build:
-      commands:
-        - cd backend
-        - mvn package
-        - echo build
-    post_build:
-      commands:
-        - echo post_build
-        - mv target/*.jar app.jar
-  artifacts:
-    files:
-      - app.jar
+phases:
+  install:
+    runtime-versions: emphasized text
+    java: corretto11
+    commands:
+      - echo install
+  pre_build:
+    commands:
+      - echo pre_build
+  build:
+    commands:
+      - cd backend
+      - mvn package
+      - echo build
+  post_build:
+    commands:
+      - echo post_build
+      - mv target/*.jar app.jar
+artifacts:
+  files:
+    - app.jar
