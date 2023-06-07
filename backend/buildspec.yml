@@ -1,8 +1,7 @@
 version: 0.2
-
   phases:
     install:
-      runtime-versions:emphasized text
+      runtime-versions: emphasized text
       java: corretto11
       commands:
         - echo install
@@ -18,7 +17,6 @@ version: 0.2
       commands:
         - echo post_build
         - mv target/*.jar app.jar
-
   artifacts:
     files:
       - app.jar
