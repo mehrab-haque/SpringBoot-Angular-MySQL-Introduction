@@ -14,7 +14,7 @@
     <name>jdk17test</name>
     <description>jdk17test</description>
     <properties>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
     </properties>
     <dependencies>
         <dependency>
