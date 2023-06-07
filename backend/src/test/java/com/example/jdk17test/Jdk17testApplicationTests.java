@@ -1,13 +1,13 @@
-package com.springintro.springboot;
+package com.example.jdk17test;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringbootBackendApplicationTests {
+class Jdk17testApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }
