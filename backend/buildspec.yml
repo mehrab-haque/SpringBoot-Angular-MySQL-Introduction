@@ -19,4 +19,4 @@ phases:
       - ls
 artifacts:
   files:
-    - app.jar
+    - backend/app.jar
