@@ -16,7 +16,7 @@ phases:
       - echo post_build
       - ls
       - mv target/*.jar app.jar
+      - ls
 artifacts:
   files:
-    - ls
     - app.jar
