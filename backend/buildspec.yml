@@ -11,6 +11,7 @@ version: 0.2
         - echo pre_build
     build:
       commands:
+        - cd backend
         - mvn package
         - echo build
     post_build:
