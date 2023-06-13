@@ -37,6 +37,12 @@ public class BookService {
         return bookRepository.findByTitle(title);
     }
     public ResponseEntity<Map<String, Boolean>> deleteBook(Long bookId){
+        //delete associations
+        Book book=getBookById(bookId);
+        book.setAuthors(new HashSet<>());
+        bookRepository.save(book);
+
+        //old code
         bookRepository.deleteById(bookId);
         Map<String, Boolean> response = new HashMap<>();
         response.put("deleted", Boolean.TRUE);

@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class Testwithspring2Controller {
     @RequestMapping("/")
     public String hellow(){
-        return "hi from spring about pageeeeeeeeee\n";
+        return "hi from spring about pageeeeeeeeee riyocafe\n";
     }
 }
